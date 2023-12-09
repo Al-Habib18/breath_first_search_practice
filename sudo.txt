@@ -1,0 +1,18 @@
+create Q,
+create a  array  visit[] 
+
+Q.add(0) 
+
+while( ! q.empty()){
+    int current = q.removeFirst();
+    if( visit[current] == false ){
+        1. print(current) 
+        2. visit[current] = true 
+        3 . for( int i = 0; i < graph[current].size(); i++ ){
+            edge e = graph[current].get(i);
+            q.add(e.dist) ;
+        }
+    }
+}
+
+time complexity = O(v+e) ;
